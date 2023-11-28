@@ -1,0 +1,24 @@
+{
+  "name": "cypress-cucumber-ui-framework",
+  "version": "1.0",
+  "description": "This framework is meant to be a sample for UI automation working with Cucumber and Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:test": "cypress run --spec cypress/e2e/features/*",
+    "cypress:tags": "cypress run --env tags=@userlogin"
+
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "UI_Cypress_Cucumber",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@shelex/cypress-allure-plugin": "^2.5.0",
+    "cypress": "^13.6.0",
+    "esbuild": "^0.16.4",
+    "multiple-cucumber-html-reporter": "^3.0.1"
+  }
+}
